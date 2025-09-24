@@ -27,25 +27,24 @@ html, body {
     font-family: var(--fonte1);
 }
 
-/*parte de cima do site*/
+/*fundo do site */
 header{
     background-color: black;
     color: white;
     text-align: center;
-    font-family: var(--fonte2);
 }
 
-/*conteudo que aparece no inicio do site, tipo nome ou assunto*/
+/*conteudo inicial do site, tipo nome // assunto*/
 header > h1{
  padding-top: 50px;
  font-variant: small-caps;
- font-family: var(--fonte2);
+ font-family:var(--font3);
  font-size: 10vw;
 }
 
 header > P{
     padding-bottom: 50px;
-    font-family: var(--font2);
+    font-family:var(--font2);
 }
 
 /*configurando links*/
@@ -66,8 +65,9 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 2em;
+    line-height: 3em;
     font-family: var(--font3);
+    font-size: 2vw;
 
 }
 
@@ -88,7 +88,7 @@ section.imagem{
 
 /*o que vai aparecer em cima da imagem de fundo*/
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.829);
 }
 
