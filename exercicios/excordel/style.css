@@ -1,63 +1,98 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/*tirando a margin do site*/
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
+
+:root{
+ --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+ --font2:"Permanent Marker", cursive;
+ --font3:"DM Serif Display", serif;
+
+
+
+}
+
 
 html, body {
     min-height: 100vh;
     background-color: bisque;
+    font-family: var(--fonte1);
 }
 
+/*parte de cima do site*/
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
 
+/*conteudo que aparece no inicio do site, tipo nome ou assunto*/
 header > h1{
  padding-top: 50px;
  font-variant: small-caps;
+ font-family: var(--fonte2);
+ font-size: 10vw;
 }
 
 header > P{
     padding-bottom: 50px;
+    font-family: var(--font2);
 }
 
+/*configurando links*/
 header a, footer a{
+    font-family: var(--font3);
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
+
 header a:houver, footer a:houver{
     text-decoration:underline;
 }
+
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--font3);
 
 }
 
+
+/*conteudo do site*/
 section.normal{
  background-color: white;
  color: black;
 }
 
+
+/*imagem de fundo*/
 section.imagem{
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
 }
 
+
+/*o que vai aparecer em cima da imagem de fundo*/
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.829);
 }
 
+/*rodape*/
 footer{
     background-color: black;
     text-align: center;
