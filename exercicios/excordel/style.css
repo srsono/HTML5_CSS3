@@ -23,7 +23,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: bisque;
+    background-color:white;
     font-family: var(--fonte1);
 }
 
@@ -84,17 +84,24 @@ section.normal{
 
 /*imagem de fundo*/
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.568);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
 }
 
-section#001{
-background-image: url();
+section#img01{
+    background-image: url('imgs/pexels-kampus-5940721.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-section#002{
-background-image: url();
+section#img02{
+    background-image: url(imgs/pexels-ron-lach-10660565.jpg);
+    background-position:center;
+    background-size: cover;
 }
+
+
 
 /*o que vai aparecer em cima da imagem de fundo*/
 section.imagem > p {
