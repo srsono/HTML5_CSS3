@@ -71,6 +71,9 @@ section{
 
 }
 
+section > p{
+    padding-bottom: 1em;
+}
 
 /*conteudo do site*/
 section.normal{
@@ -85,6 +88,13 @@ section.imagem{
     color: white;
 }
 
+section#001{
+background-image: url();
+}
+
+section#002{
+background-image: url();
+}
 
 /*o que vai aparecer em cima da imagem de fundo*/
 section.imagem > p {
