@@ -8,7 +8,16 @@ body{
 /*corpo tabela*/
 table{
     width: 600px;
+    /*position: relative; necesaio para cria cabecalho fixo*/ 
 }
+
+/*thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: rgba(169, 169, 169, 0.795);
+
+    cabecalho fixo para tabelas grandes!
+}*/
 
 /*linhas das bordas e espacamento do conteudo e parte de cima tabela*/
 th, td{
@@ -21,6 +30,11 @@ thead, tfoot{
     background-color: rgba(169, 169, 169, 0.795);
 }
 
+/*efeito zebrado usando nth-child*/
+tbody > tr:nth-child(2n){ 
+  background-color: rgba(218, 214, 214, 0.747);
+}
+ 
 /*Rodapé tabela*/
 tfoot{
     text-align: center;
