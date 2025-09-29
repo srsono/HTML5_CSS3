@@ -8,36 +8,106 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-        } /*corpo do site*/
+        /*corpo do site*/
+        }
 
         table{
-            width: 300px;
+            width: 500px;
             border-collapse: collapse;
+            background-color: rgba(233, 229, 229, 0.719);
         } /*corpo da tabela*/
+
+        caption{
+            border: 1px solid black;
+            background-color: dimgray;
+            color: white;
+        }
+
+        thead{
+            background-color:dimgray;
+        }
 
         th, td{
             border: 1px solid black;
         } /*borda da coluna*/
+
+       .lado{
+           text-align: left;
+           background-color: dimgray;
+       }
     </style>
 </head>
 <body>
     <table>
         <caption>Boletim escola</caption>
         <thead>
-            <th>Area</th>
-            <th>disciplinas</th>
-            <th colspan="2">Nota</th> <!--coluna com espanção de 2 colunas-->
-            <th>Media</td>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">disciplinas</th>
+                <th colspan="2">Notas</th> <!--coluna com espanção de 2 colunas-->
+                <th rowspan="2">Media</td>
+            </tr>
+
+            <tr id="nota1/2">
+                <td>Nota 1</td>
+                <td>Nota 2</td>
+            </tr>
         </thead>
 <!--corpo da tabela a baixo-->
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" class="">Exatas</th>
                 <td>Matematica</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
+
+            <tr>
+                <td>fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+             <tr>
+                <th colspan="4" class="lado">Medias de exatas</th>
+                 <td colspan="1">0.0</td>
+             </tr>
+
+             <tr>
+                 <th rowspan="2">Humanas</th>
+                 <td>Historias</td>
+                 <td>0.0</td>
+                 <td>0.0</td>
+                 <td>0.0</td>
+             </tr>
+
+             <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+             </tr>
+
+             <tr>
+                 <th colspan="4" class="lado">Medias de humanas</th>
+                 <td colspan="1">0.0</td>
+             </tr>
         </tbody>
     </table>
 </body>
