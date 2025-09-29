@@ -8,42 +8,42 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-        }
+        } /*corpo do site*/
 
         caption{
             border: 1px solid black;
             font-size:larger;
             color: white;
             background-color: black;
-        }
+        } /*coluna com  tabela de filmes favoritos*/
 
         table{
             width: 300px;
             border-collapse: collapse;
-        }
+        } /*tamanho da tabela e junção das bordas com border-collapse*/
 
         thead{
             background-color:rgba(128, 128, 128, 0.733);
             text-align: center;
-        }
+        }/*coluna com grupo nomes e filmes*/
 
         th, td{
             border: 1px solid black;
             padding: 10px;
-        }
+        }/*bordas com espacamento*/
     </style>
 </head>
 <body>
     <table>
         <caption>tabela de fimes favoritos</caption>
         <thead>
-            <th>Genero</th>
-            <th>Nomes</th>
-            <th colspan="4">filmes</th>
+            <th scope="col">Grupos</th> <!--scope col colunas-->
+            <th scope="col">Nomes</th>
+            <th colspan="4" scope="colgroup">filmes</th>
         </thead>
         <tbody>
             <tr>
-             <th rowspan="3" style="background-color:rgba(255, 105, 180, 0.788);">mulher</th>
+             <th rowspan="3" style="background-color:rgba(255, 105, 180, 0.788);" scope="rowgroup">mulher</th> <!--rowgrup pra definir um grupo de colunas-->
              <td>livia</td>
              <td>Gato de botas</td>
              <td>A mumia</td>
@@ -65,7 +65,7 @@
             </tr>
 
             <tr>
-                <th rowspan="3" style="background-color:rgba(0, 0, 255, 0.685);">Homens</th>
+                <th rowspan="3" style="background-color:rgba(0, 0, 255, 0.685);" scope="rowgroup">Homens</th> <!--rowgrup pra definir um !grupo! de colunas-->
                 <td>Diego</td>
                 <td>Batman</td>
                 <td>volta ao mundo</td>
