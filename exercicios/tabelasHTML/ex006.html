@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        } /*corpo do site*/
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        } /*corpo da tabela*/
+
+        th, td{
+            border: 1px solid black;
+        } /*borda da coluna*/
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Boletim escola</caption>
+        <thead>
+            <th>Area</th>
+            <th>disciplinas</th>
+            <th colspan="2">Nota</th> <!--coluna com espanção de 2 colunas-->
+            <th>Media</td>
+        </thead>
+<!--corpo da tabela a baixo-->
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
