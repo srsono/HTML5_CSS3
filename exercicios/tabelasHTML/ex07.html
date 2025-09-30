@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table{
+            width: 400px;/*largura*/
+            border-collapse: collapse; /*bordas coladas */
+
+        }
+
+        caption{
+            border: 1px solid black; /*borda*/
+            font-size: 18px; /*tamanho da letra*/
+            padding: 10px; /*espaçamento*/
+            /*nome tabela "titulo" */
+        }
+
+        th , td{
+            border: 1px solid black;
+            padding: 10px;
+            /*borda e espacamento*/
+        }
+        
+        .cnome{
+            background-color: green;
+        }
+        .c-idade{
+            background-color: blue;
+        }
+        .csexo{
+            background-color:gold;
+        }
+
+        .cprof{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabela cadastro</h1>
+    <table>
+        <colgroup><!--personalização de colunas colgrup-->
+            <col class="cnome">
+            <col class="csexo" span="2"> <!--coluna com span dizendo que ela vai ocupar duas linhas de coluna-->
+            <col class="cprof">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <td scope ="col">nome</td> <!--usando escopo de coluna "scope col"-->
+            <td scope ="col">sexo</td>
+            <td scope ="col">Idade</td>
+            <td scope ="col">profisão</td>
+        </tr>
+
+        <tr>
+            <td>fani</td>
+            <td>f</td>
+            <td>22</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Nilda</td>
+            <td>f</td>
+            <td>27</td>
+            <td>manobrista</td>
+        </tr>
+
+        <tr>
+            <td>Fan</td>
+            <td>M</td>
+            <td>23</td>
+            <td>sketista</td>
+        </tr>
+
+        <tr>
+            <td>Nicole</td>
+            <td>f</td>
+            <td>42</td>
+            <td>Paraquedista</td>
+        </tr>
+
+        <tr>
+            <td>Ani</td>
+            <td>f</td>
+            <td>24</td>
+            <td>personal treiner</td>
+        </tr>
+
+        <tr>
+            <td>fabio</td>
+            <td>M</td>
+            <td>32</td>
+            <td>dev senior</td>
+        </tr>
+    </table>
+</body>
+</html>
