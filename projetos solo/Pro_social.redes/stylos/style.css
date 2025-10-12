@@ -9,7 +9,7 @@
 html, bady{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    
 }
 
 body{
@@ -33,8 +33,8 @@ main{
     transform: translate(-50%, -50%);
 
     height: 626px;
-    width: 310px;
-    background: url(../pacote-d013/imagens/frame-iphone.png) no-repeat;
+    width: 380px;
+    background: url(../pacote-d013/imagens/iphone003.png) no-repeat;
 }
 
 iframe#tela{
