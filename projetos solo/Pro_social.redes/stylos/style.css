@@ -13,9 +13,9 @@ html, bady{
 }
 
 body{
-    background: url(../pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(../pacote-d013/imagens/fundo\ carro3.jpg) no-repeat top center;
+    background-size:cover;
+    background-attachment:fixed;
 
 }
 
@@ -33,14 +33,15 @@ main{
     transform: translate(-50%, -50%);
 
     height: 626px;
-    width: 380px;
+    width: 430px;
     background: url(../pacote-d013/imagens/iphone003.png) no-repeat;
 }
 
 iframe#tela{
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 270px;
-    height: 473px;
+    top: 87px;
+    left: 169px;
+    width: 192px;
+    height: 486px;
+    border-radius: 29px;
 }
