@@ -17,13 +17,12 @@ body{
     background: url(../pacote-d013/imagens/fundo\ carro3.jpg) no-repeat top center;
     background-size:cover;
     background-attachment:fixed;
-
+/*config img do carro*/
 }
 
 main{
     position: relative;
     height: 100vh;
-    position: relative;
 
 }
 
@@ -33,8 +32,8 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 487px;
-    width: 400px;
+    height: 487px; /*altura*/
+    width: 400px; /*largura*/
     background: url(../pacote-d013/imagens/png\ cell4.png) no-repeat ;
 }
 
