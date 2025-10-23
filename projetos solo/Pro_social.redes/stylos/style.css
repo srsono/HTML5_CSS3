@@ -1,47 +1,68 @@
 @charset "UTF-8";
 
 * /*configuração geral do conteudo*/{
-    margin: 0%;
+    margin: 0%; 
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*config tamanho corpo site */
-html, bady{
+html, body{
     height: 100vh;
-    width: 100vw;
+    width: 100vw; 
     
 }
 
 body{
-    background: url(../pacote-d013/imagens/fundo\ carro3.jpg) no-repeat top center;
-    background-size:cover;
-    background-attachment:fixed;
-/*config img do carro*/
+    background: url(../pacote-d013/imagens/fundo\ carro3.jpg) no-repeat top center; /*img de fundo*/
+    background-size:cover; /*config tamanho img de fundo*/
+    background-attachment:fixed; /*config fixação img de fundo*/
 }
 
 main{
-    position: relative;
-    height: 100vh;
+    position: relative; /*posição corpo*/
+    width: 100vw; /*largura corpo*/     
+    height: 100vh; /*altura corpo*/
 
 }
 
 #telefone{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; /*posição celular*/
+    top: 50%; /*centraliza celular*/
+    left: 50%; /*centraliza celular*/
+    transform: translate(-50%, -50%); /*centraliza celular*/    
 
     height: 487px; /*altura*/
     width: 400px; /*largura*/
-    background: url(../pacote-d013/imagens/png\ cell4.png) no-repeat ;
+    background: url(../pacote-d013/imagens/png\ cell4.png) no-repeat ; /*img do celular*/
 }
 
 iframe#tela{
     position: relative;
-    top: 30px; 
-    left: 101px; /*esquerda*/
+    top: 24px; /*cima*/
+    left: 103px; /*esquerda*/
     width: 172px; /*direita*/
-    height: 430px; 
-    border-radius: 14px;
+    height: 439px; /*altura baixo*/
+    border-radius: 14px; /*borda tela*/
+    border: none; /*tira borda padrao iframe*/
+}
+
+#botoes img{
+    width: 50px; /*tamanho*/
+    margin: 10px; /*espacamento*/
+    border-radius: 50%; /*borda*/
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.219); /*sombra botoes*/
+    box-sizing: border-box; /*config para ajust do houver*/
+}
+
+#botoes{
+text-align: right; /*posicionamento botoes lado esquerdo*/
+}
+
+#botoes img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.349); /*borda de fora dos botoes*/
+    transform:translate(-2px -2px); /*movimento hover*/
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5); /*sombra hover*/
+    transition-property: transform , box-shadow; /*transição hover*/
+    transition-duration: transform 4s, box-shadow 4s; /*duração hover*/
 }
