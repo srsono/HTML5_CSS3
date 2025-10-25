@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        } /*reset e fonte*/
+
+        img{
+            width: 100vw;
+            height: auto;
+        } /*img responsiva*/
+
+        ::-webkit-scrollbar{
+            display: none;
+        } /*tira a barra de rolagem*/
+
+        a{
+            display: block;
+            background-color: darkred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+        } /*estilo do link*/
