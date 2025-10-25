@@ -39,20 +39,20 @@ main{
 
 iframe#tela{
     position: relative;
-    top: 24px; /*cima*/
-    left: 103px; /*esquerda*/
-    width: 172px; /*direita*/
-    height: 439px; /*altura baixo*/
-    border-radius: 14px; /*borda tela*/
-    border: none; /*tira borda padrao iframe*/
+    top:24px; /*cima*/
+    left:103px; /*esquerda*/
+    width:172px; /*direita*/
+    height:439px; /*altura baixo*/
+    border-radius:14px; /*borda tela*/
+    border:none; /*tira borda padrao iframe*/
 }
 
 #botoes img{
-    width: 50px; /*tamanho*/
-    margin: 10px; /*espacamento*/
-    border-radius: 50%; /*borda*/
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.219); /*sombra botoes*/
-    box-sizing: border-box; /*config para ajust do houver*/
+    width:50px; /*tamanho*/
+    margin:10px; /*espacamento*/
+    border-radius:50%; /*borda*/
+    box-shadow:2px 2px rgba(0, 0, 0, 0.219); /*sombra botoes*/
+    box-sizing:border-box; /*config para ajust do houver*/
 }
 
 #botoes{
