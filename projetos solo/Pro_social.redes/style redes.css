@@ -24,3 +24,8 @@
             font-weight: bold;
             text-decoration: none;
         } /*estilo do link*/
+
+        a:hover{
+            background-color: red;
+            color: black;
+        } /*estilo do link ao passar o mouse*/
