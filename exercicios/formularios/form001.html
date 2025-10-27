@@ -13,9 +13,10 @@
 </head>
 <body>
    <h1>Bem-vindo ao meu primeiro formulário</h1>
-<form action="#">
-     <p>nome: <input type="text" name="" id=""></p> <!-- Campo de entrada para nome -->
-    <p>gmail: <input type="text" name="" id=""></p> <!-- Campo de entrada para email -->
+<form action="vadastro.php" method="post"> <!-- Formulário que envia dados para vadastro.php -->
+     <p><label for="inome">nome: </label><input type="text" name="nome" id="inome"></p> <!-- Campo de entrada para nome -->
+     
+    <p><label for="igmail">gmail:</label> <input type="text" name="gmail" id="igmail"></p> <!-- Campo de entrada para email -->
     <input type="submit" value="Enviar"> <!-- Botão de envio -->
 </form> 
 </body>
