@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando controles especiais em formulários</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">usuário:</label> <!-- campo de texto -->
+            <input type="text" name="iusu" id="iusu" required minlength="8" maxlength="15" placeholder="nome de usuário"> <!-- requerido que dizer campo obrigatório e minlength e maxlength -->
+        </p>
+        <p>
+            <label for="isenha">senha:</label> <!-- campo de senha -->
+            <input type="password" name="isenha" id="isenha" required minlength="8" maxlength="15" placeholder="senha deve ter 8 caracteres"> <!-- requerido que dizer campo obrigatório com minlength e maxlength maximo e minimo numero de letras -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
