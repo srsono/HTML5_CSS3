@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formularios</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+                   <input type="text" name="inome" id="inome" required maxlength="30" placeholder="Digite seu nome completo">
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="imedia" id="imedia" required min="0" max="10" step="0.1" placeholder="Digite a média">
+        </p>
+
+        <p>
+            <label for="imes">Semestre:</label>
+            <input type="month" name="imes" id="imes" required min="1" max="8" placeholder="Digite o semestre">
+        </p>
+
+        <p>
+        <input type="submit" value="Enviar dados">
+        <input type="reset" value="Limpar dados">
+        </p>
+
+    </form>
+</body>
+</html>
