@@ -7,8 +7,24 @@
 </head>
 <body>
     <h1>exemplo de formulário</h1>
-    <form action="" method="get">
-        
+    <form action="" method="get"> 
+
+        <P>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required> <!-- dados do usuário -->
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$">
+            <!-- Estudar regEx para validação de telefone -->
+        </P>
+
+        <P>
+        <input type="submit" value="Enviar"> <!-- botão de envio -->
+        <input type="reset" value="Limpar"> <!-- botão de limpar -->
+        </P>
     </form>
 </body>
 </html>
