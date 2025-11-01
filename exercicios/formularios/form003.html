@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Teste de Formulários</h1>
-    <form action="" method="get">
+    <form action="" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
-                   <input type="text" name="inome" id="inome" required maxlength="30" placeholder="Digite seu nome completo">
+                   <input type="text" name="inome" id="inome" required maxlength="30" placeholder="Digite seu nome completo" autocomplete="name">
         </p>
 
         <p>
@@ -21,6 +21,16 @@
         <p>
             <label for="imes">Semestre:</label>
             <input type="month" name="imes" id="imes" required min="1" max="8" placeholder="Digite o semestre">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="idia" id="idia" required>
+        </p>
+
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" name="ihora" id="ihora">
         </p>
 
         <p>
