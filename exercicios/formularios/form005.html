@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>exemplo de formulario com checkbox e radio button</h1>
+    <form action="" method="get">
+
+        <fieldset> <!-- agrupa elementos do formulario -->
+            <legend>sexo</legend>
+            <input type="radio" name="isex" id="isexmasc" value="masc"> <label for="isexmasc">Masculino</label> <br>
+
+            <input type="radio" name="isex" id="isexfem" value="fem"> <label for="isexfem">Feminino</label> <br>
+
+            <input type="radio" name="isex" id="isexoutro" value="outro" checked> <label for="isexoutro">Outro</label>
+        </fieldset>
+
+        <fieldset> <!-- agrupa elementos do formulario --> 
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="sportfut" id="isportfut"> <label for="isportfut">Futbol</label> <br>
+
+            <input type="checkbox" name="sportbasq" id="isportbasq"> <label for="isportbasq">Basquete</label> <br>
+
+            <input type="checkbox" name="sportvolei" id="isportvolei"> <label for="isportvolei">Volei</label> <br>
+
+            <input type="checkbox" name="sportnat" id="isportnat"> <label for="isportnat">Natação</label>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- botão de envio do formulario -->
+            <input type="reset" value="Limpar"> <!-- botão de reset do formulario -->
+        </p>
+    </form>
+</body>
+</html>
