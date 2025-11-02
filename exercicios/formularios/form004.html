@@ -9,22 +9,27 @@
     <h1>exemplo de formulário</h1>
     <form action="" method="get"> 
 
-        <P>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+      <fieldset> <!--tag fildeset agrupa elementos relacionados em um formulário -->
+         <legend>Dados Pessoais</legend> <!-- legenda do grupo de campos -->
+             <p>
+                 <label for="nome">Nome:</label>
+                 <input type="text" name="nome" id="nome">
+             </p>
+             <p>
+                 <label for="email">Email:</label>
+                 <input type="email" name="email" id="email" required> <!-- dados do usuário -->
+             </p>
+             <p>
+                 <label for="telefone">Telefone:</label>
+                 <input type="tel" name="telefone" id="telefone" autocomplete="tel" required pattern="^\(\d{2}\)\d{4}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                 <!-- Estudar regEx para validação de telefone -->
+             </p>
+     </fieldset>
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required> <!-- dados do usuário -->
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" id="telefone" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$">
-            <!-- Estudar regEx para validação de telefone -->
-        </P>
-
-        <P>
-        <input type="submit" value="Enviar"> <!-- botão de envio -->
-        <input type="reset" value="Limpar"> <!-- botão de limpar -->
-        </P>
+        <p>
+            <input type="submit" value="Enviar"> <!-- botão de envio -->
+            <input type="reset" value="Limpar"> <!-- botão de limpar -->
+        </p>
     </form>
 </body>
 </html>
