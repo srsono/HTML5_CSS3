@@ -8,7 +8,26 @@
 </head>
 <body>
     <h1>Teste 001</h1>
-    <p>escolha de qual pais voce visitaria se tivesse a oportunidade</p>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="primeiro e segundo nome">
+        </p>
+
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+    </fieldset>
+
+    <p>escolha qual pais voce visitaria se tivesse a oportunidade</p>
     <table> 
             <th scope="col">País</th>
             <th scope="col">Motivo</th>
@@ -39,7 +58,7 @@
         </tr>
     </table>
 
-    <fieldset>
+   <fieldset>   <!--area de seleção de pais -->
         <legend>destino desejado</legend>
 
         <input type="checkbox" name="paises" id="japao"><label for="japao">Japão</label>
@@ -52,6 +71,8 @@
 
         <input type="checkbox" name="pais" id="brasil"><label for="brasil">Brasil</label>
     </fieldset>
+
+    
 </body>
 </html>
 
