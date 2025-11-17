@@ -9,51 +9,52 @@
 <body>
     <h1>Teste 001</h1>
 
-    <fieldset>
+    <fieldset> <!--painel com dados usuario--> 
         <legend>Dados Pessoais</legend>
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" autocomplete="primeiro e segundo nome">
+            <input type="text" name="nome" id="inome" required ="8" placeholder="primeiro e segundo nome">
         </p>
 
         <p>
             <label for="iemail">Email:</label>
-            <input type="email" name="email" id="iemail">
+            <input type="email" name="email" id="iemail" required>
         </p>
 
         <p>
             <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel">
+            <input type="tel" name="tel" id="itel" placeholder="(xx) xxxx-xxxx">
         </p>
     </fieldset>
 
-    <p>escolha qual pais voce visitaria se tivesse a oportunidade</p>
-    <table> 
+    <h2>escolha qual pais voce visitaria se tivesse a oportunidade</h2>
+
+    <table>  <!--Tabela com paises e seuas respectivas bandeiras-->
             <th scope="col">País</th>
             <th scope="col">Motivo</th>
         <tr>
             <td>
-                <img src="../projetos solo/imagens/japao.webp" alt="Japão" width="23">Japão</td>
+                <img src="../projetos solo/imagens/japao.webp" alt="Japão" width="23"> Japão</td>
             <td>Para conhecer a cultura milenar e a tecnologia avançada.</td>
         </tr>
         <tr>
             <td>
-                <img src="../projetos solo/imagens/italia.png" alt="Itália" width="23">Itália</td>
+                <img src="../projetos solo/imagens/italia.png" alt="Itália" width="23"> Itália</td>
             <td>Para explorar a arte renascentista e a culinária deliciosa.</td>
         </tr>
         <tr>
             <td>
-                <img src="../projetos solo/imagens/nova zelandia.png" alt="Nova Zelândia" width="23">Nova Zelândia</td>
+                <img src="../projetos solo/imagens/nova zelandia.png" alt="Nova Zelândia" width="23"> Nova Zelândia</td>
             <td>Para desfrutar das paisagens naturais deslumbrantes e aventuras ao ar livre.</td>
         </tr>
         <tr>
             <td>
-                <img src="../projetos solo/imagens/franca.png" alt="França" width="23">França</td>
+                <img src="../projetos solo/imagens/franca.png" alt="França" width="23"> França</td>
             <td>Para visitar monumentos históricos e experimentar a gastronomia francesa.</td>
         </tr>
         <tr>
             <td>
-                <img src="../projetos solo/imagens/brasil.webp" alt="Brasil" width="23">Brasil</td>
+                <img src="../projetos solo/imagens/brasil.webp" alt="Brasil" width="23"> Brasil</td>
             <td>Para vivenciar a diversidade cultural e as belezas naturais do país.</td>
         </tr>
     </table>
@@ -71,6 +72,10 @@
 
         <input type="checkbox" name="pais" id="brasil"><label for="brasil">Brasil</label>
     </fieldset>
+
+    <p>
+         <input type="submit" value="enviar">
+    </p>
 
     
 </body>
