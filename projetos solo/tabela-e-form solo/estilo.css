@@ -1,8 +1,16 @@
-charset="UTF-8">
-body {
+@charset "UTF-8";
+
+body{
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    background-color: #594F4F;
+}
+
+div.fundo {
+background-image: url(../imagens/pexels-pixabay-358319.jpg);
+background-size: cover;
+background-position: center;
 }
 
 h1 {
