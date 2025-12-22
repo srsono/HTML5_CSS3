@@ -1,43 +1,66 @@
 @charset "UTF-8";
 
+:root{
+    --cor-1: #011C40;
+    --cor-2: #023859;
+    --cor-3: #5386A6;
+    --cor-4: #84A9BF;
+    --cor-5: #D9C7B8;
+    --cor-6: #011c40ea;
+}
+
+/*Estilo para o tamanho da fonte*/
+html{
+    font-size: 16px;    
+}
+
+/*Estilo para o fundo da página*/
 body{
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #594F4F;
+    background-color: var(--cor-4);
 }
 
+/*Estilo para o fundo da página img avião*/
 div.fundo {
 background-image: url(../imagens/pexels-pixabay-358319.jpg);
 background-size: cover;
 background-position: center;
 }
 
+/*Estilo para os títulos e parágrafos*/
 h1 {
     color: #333333;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
+    font-size: 2rem;
 }
 
+/*Estilo para os títulos e parágrafos*/
 p {
     color: #000000;
     line-height: 1.6;
     margin: 20px;
 }
 
+/*Estilo para as tabelas*/
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
+/*Estilo para os títulos e parágrafos*/
 th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
+/*Estilo para o cabeçalho da tabela*/
 th {
-    background-color: #f2f2f2;
+    background-color: var(--cor-6);
+    color: #ffffff;
 }
 
